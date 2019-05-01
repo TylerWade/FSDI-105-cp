@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="friends.css">
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Pet Salon</title>
+  </head>
+
+  <body>
+      <header class="header">
+            <div class="main-content">
+               <div class="bar">
+                  <a href="index.html"><img src="img/logo.png" width="200px"></a>
+      
+                  <img src="img/walk.png" id="walk" width="200px">
+               </div>
+            </div>
+         </header>
+   
+    <div id="info"></div>
+      <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#" class="active">Our Furry Friends</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+    <br><br><br>
+
+    <div class="table-users">
+      <div class="header">Furry Friends</div>
+      <hr>
+      <table cellspacing="0" align="center" class="table">
+         <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Age & Weight</th>
+            <th>Owners Name</th>
+            <th width="230">Service Type</th>
+            <th>Fed and Walked</th>
+            <th>Activities</th>
+         </tr>
+         <tr>
+            <td id="pet1i"></td>
+            <td id="pet1n"></td>
+            <td id="pet1a"></td>
+            <td id="pet1o"></td>
+            <td>Selection:<br>
+               <select name="ServiceType1" id="myList1" onchange="servicetype1()">
+                  <option value="hariCut">HairCut</option>
+                  <option value="have">Shave</option>
+                  <option value="petSitting">Cleaning</option>
+                  <option value="walk">Walk</option>
+               </select>
+               <p>Serice for today is: <input type="text" id="service1"></p>
+            </td>
+            <td id="pet1h"></td>
+            <td>
+               <button onclick="feed1()">Feed Janis</button><br>
+               <button onclick="walk1()">Walk Janis</button>
+            </td>
+         </tr>
+         <tr>
+            <td id="pet2i"></td>
+            <td id="pet2n"></td>
+            <td id="pet2a"></td>
+            <td id="pet2o"></td>
+            <td>Selection:<br>
+               <select name="ServiceType2" id="myList2" onchange="servicetype2()">
+                  <option value="hariCut">HairCut</option>
+                  <option value="have">Shave</option>
+                  <option value="petSitting">Cleaning</option>
+                  <option value="walk">Walk</option>
+               </select>
+               <p>Serice for today is: <input type="text" id="service2"></p>
+            </td>
+            <td id="pet2h"></td>
+            <td>
+               <button onclick="feed2()">Feed Ozzy</button><br>
+               <button onclick="walk2()">Walk Ozzy</button>
+            </td>
+         </tr>
+         <tr>
+            <td id="pet3i"></td>
+            <td id="pet3n"></td>
+            <td id="pet3a"></td>
+            <td id="pet3o"></td>
+            <td>Selection:<br>
+               <select name="ServiceType3" id="myList3" onchange="servicetype3()">
+                  <option value="hariCut">HairCut</option>
+                  <option value="have">Shave</option>
+                  <option value="petSitting">Cleaning</option>
+                  <option value="walk">Walk</option>
+               </select>
+               <p>Serice for today is: <input type="text" id="service3"></p>
+            </td>
+            <td id="pet3h"></td>
+            <td>
+               <button onclick="feed3()">Feed Cooper</button><br>
+               <button onclick="walk3()">Walk Cooper</button>
+            </td>
+         </tr>
+         <tr>
+            <td id="pet4i"></td>
+            <td id="pet4n"></td>
+            <td id="pet4a"></td>
+            <td id="pet4o"></td>
+            <td>Selection:<br>
+               <select name="ServiceType4" id="myList4" onchange="servicetype4()">
+                  <option value="hariCut">HairCut</option>
+                  <option value="have">Shave</option>
+                  <option value="petSitting">Cleaning</option>
+                  <option value="walk">Walk</option>
+               </select>
+               <p>Serice for today is: <input type="text" id="service4"></p>
+            </td>
+            <td id="pet4h"></td>
+            <td>
+               <button onclick="feed4()">Feed Peaches</button><br>
+               <button onclick="walk4()">Walk Peaches</button>
+            </td>
+         </tr>
+         <tr>
+            <td id="pet5i"></td>
+            <td id="pet5n"></td>
+            <td id="pet5a"></td>
+            <td id="pet5o"></td>
+            <td>Selection:<br>
+               <select name="ServiceType5" id="myList5" onchange="servicetype5()">
+                  <option value="hariCut">HairCut</option>
+                  <option value="have">Shave</option>
+                  <option value="petSitting">Cleaning</option>
+                  <option value="walk">Walk</option>
+               </select>
+               <p>Serice for today is: <input type="text" id="service5"></p>
+            </td>
+            <td id="pet5h"></td>
+            <td>
+               <button onclick="feed5()">Feed Maggie</button><br>
+               <button onclick="walk5()">Walk Maggie</button>
+            </td>
+         </tr>
+         <tr>
+            <td id="pet6i"></td>
+            <td id="pet6n"></td>
+            <td id="pet6a"></td>
+            <td id="pet6o"></td>
+            <td>Selection:<br>
+               <select name="ServiceType6" id="myList6" onchange="servicetype6()">
+                  <option value="hariCut">HairCut</option>
+                  <option value="have">Shave</option>
+                  <option value="petSitting">Cleaning</option>
+                  <option value="walk">Walk</option>
+               </select>
+               <p>Serice for today is: <input type="text" id="service6"></p>
+            </td>
+            <td id="pet6h"></td>
+            <td>
+               <button onclick="feed6()">Feed Mocha</button>
+               <button onclick="walk6()">Walk Mocha</button>
+            </td>
+         </tr>
+      </table>
+   </div>
+
+
+  <div>
+    <script src="js/friends.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </div>
+  
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+</head>
+<body>
+
+	<header class="site-header">
+		<div class="main-content">
+			<div class="bar">
+				<a href="index.html"><img src="img/logo2.png" width="300px"></a>
+
+				<img src="img/walk.png" id="walk" width="200px">
+			</div>
+		</div>
+		<div id="info"></div>
+	</header>
+	
+	<nav>
+		  <ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="#">Services</a></li>
+			  <li><a href="friends.html">Our Furry Friends</a></li>
+			  <li><a href="contact.html" class="active">Contact</a></li>
+			  <li><a href="#">About</a></li>
+		  </ul>
+	</nav>
+<br>
+	<main class="content">
+	<form action="">
+		<fieldset>
+			<legend>Pet Registration</legend>
+			
+
+			<label for="pet-name">Pet Name:</label>
+			<input type="text" name="name" id="txtName" placeholder="Pets name" required>
+
+			<label for="pet-age">Pet Age:</label>
+			<input type="number" name="name" id="txtAge" placeholder="0" required>
+
+			<label for="selService">Service Type:</label>
+			<select  id="selService">
+				<option value="n/a" disabled selected>--- Select ---</option>
+				<option value="cleaning">Cleaning</option>
+				<option value="haircut">HairCut</option>
+				<option value="shave">Shave</option>
+				<option value="walk">Walk</option>
+			</select>
+
+			<label for="owner-name">Owner Name:</label>
+			<input type="text" name="name" id="txtOwner" placeholder="Owner name" required> 
+
+			<label for="phone-number"> Phone number: </label>
+			<input type="tel" id="txtPhone" name="txtPhone" placeholder="Phone number" required>
+
+		<button class="btn" onclick="registerPet(); return false;">Register</button>
+
+		<button class="btn" onclick="eraseBtn()">Clear Forum</button>
+	</fieldset>
+<br><br>
+
+	<input id="n" type="search" placeholder="Search">
+	<button class="btn" onclick="petSearch();">Search</button>
+
+<h1 id="plist">My Pets</h1>
+
+<table id="table">
+	<thead id="thead">
+		<tr id="tr" >
+			<th id="th">Name</th>
+			<th id="th">Age</th>
+			<th id="th">Service</th>
+			<th id="th">Owner</th>
+			<th id="th">Contact</th>
+			<th id="th">Remove</th>
+		</tr>
+	</thead>
+
+	<tbody id="listBody">
+
+	</tbody>
+</table>
+<button class="btn-submit" onclick="myfunction()">Submit</button>
+	</form>
+	</main>
+	<br><br><br><br>
+	<footer class="footer-distributed">
+
+			<div class="footer-right">
+	  
+			   <a href="#"><i class="fa fa-facebook"></i></a>
+			   <a href="#"><i class="fa fa-twitter"></i></a>
+			   <a href="#"><i class="fa fa-linkedin"></i></a>
+			   <a href="#"><i class="fa fa-github"></i></a>
+	  
+			</div>
+	  
+			<div class="footer-left">
+	  
+			   <p class="footer-links">
+				  <a href="index.html">Home</a>
+				  ·
+				  <a href="#">Services</a>
+				  ·
+				  <a href="friends.html">Our Furry Friends</a>
+				  ·
+				  <a href="contact.html">Contact</a>
+				  ·
+				  <a href="about.html">About</a>
+			   </p>
+	  
+			   <p>The Pet Salon &copy; 2019</p>
+			</div>
+	  
+		 </footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
